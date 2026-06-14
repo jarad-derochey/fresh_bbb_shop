@@ -11,6 +11,7 @@
 		"biome-write": "npx @biomejs/biome format --write ."
 	},
 	"dependencies": {
+		"@mux/mux-video-react": "^0.31.0",
 		"@once-ui-system/core": "^1.6.4",
 		"@phosphor-icons/react": "^2.1.10",
 		"@tailwindcss/postcss": "^4.2.2",
