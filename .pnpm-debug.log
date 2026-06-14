@@ -1,0 +1,15 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "C:\\Users\\sdero\\OneDrive\\Desktop\\bully bites\\core-main"
+  },
+  "1 error pnpm": {
+    "code": "ENOENT",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: pnpm",
+      "code": "ENOENT",
+      "stack": "pnpm: not found: pnpm\n    at getNotFoundError (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:47811:51)\n    at which.whichSync [as sync] (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:47888:13)\n    at getCommandAbsolutePathSync (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:49453:44)\n    at Object.default_1 [as default] (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:49462:32)\n    at Object.handler [as dlx] (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:129258:28)\n    at async C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:133736:20\n    at async run (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:133711:34)\n    at async runPnpm (C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:133921:5)\n    at async C:\\Users\\sdero\\AppData\\Local\\Temp\\pnpm-standalone.cjs:133913:7"
+    }
+  }
+}
