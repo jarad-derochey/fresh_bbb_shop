@@ -1,0 +1,170 @@
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.invert {
+  filter: invert(50%);
+}
+
+.invertMax {
+  filter: invert(100%);
+}
+
+/* ==========================================================================
+   COMPONENT SPECIFIC STYLES
+   ========================================================================== */
+
+#themeSwitcher {
+  transform: scale(0.7);
+  margin-right: -18px;
+}
+
+#heroRightContainer {
+  gap: 20px;
+}
+
+#heroTextLeft {
+  z-index: 6;
+}
+
+#heroLeftMatrixCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+#heroMobileMatrix{
+  display:none;
+}
+
+#navIcon {
+  display: none;
+}
+
+#counter {
+  scale: 0.8;
+  margin-left: -15px;
+  margin-right: -20px;
+  pointer-events: none;
+  will-change: unset;
+  user-select: none;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 895px) {
+  #heroRow {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-height: fit-content !important;
+ 
+  }
+#heroMobileMatrix{
+  display:flex;
+}
+#heroMatrix{
+  display:none;
+}
+  #heroTextLeft {
+    text-align: center;
+  }
+
+  #heroRightContainer {
+    gap: 25px;
+  }
+
+  #heroTextRight {
+    text-align: center;
+    max-width: calc(100svw - 20%);
+  }
+
+  #heroButtons {
+    justify-content: center;
+  }
+
+  #librariesRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #librariesTextLeft {
+    text-align: center;
+    min-width: 100svw;
+  }
+}
+
+/* Tablets */
+@media (max-width: 770px) {
+  #heroTextLeft {
+    font-size: 53px;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 650px) {
+  #navLinks {
+    display: none;
+  }
+  #autoScroll {
+    min-width: 150vw;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 420px) {
+  #navButton {
+    display: none;
+  }
+  #navIcon {
+    display: block;
+    scale: 0.9;
+  }
+  #heroTextLeft {
+    font-size: 47px;
+  }
+  #themeSwitcher {
+    transform: scale(0.9);
+  }
+  #mainContainer {
+    border: 0px solid transparent;
+  }
+  #navButtonsContainer {
+    gap: 20px;
+  }
+  #footer {
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  #counter{
+    scale:0.9;
+    margin:0;
+
+  }
+  #socialLinks{
+    flex-direction: row;
+    display: flex;
+    gap:0;
+    justify-content: center;
+    align-items: center;  
+
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 370px) {
+  #autoScroll {
+    min-width: 200vw;
+  }
+  
+}
