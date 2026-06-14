@@ -18,6 +18,7 @@ import { links } from "@/resources/constants/links";
 import { fonts } from "@/resources/once-ui.config";
 import { spojtConfig } from "@/resources/spojt.config";
 import { PaletteIcon } from "@phosphor-icons/react";
+import { HeroVideo } from "@/components/HeroVideo";
 
 interface HeroProps {
   className?: string;
@@ -39,7 +40,9 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
       fillHeight
       id="heroRow"
       className={className}
+      style={{ position: "relative", overflow: "hidden" }}
     >
+      <HeroVideo />
       {spojtConfig.utilities.matrixFx && (
         <>
           <Mask
