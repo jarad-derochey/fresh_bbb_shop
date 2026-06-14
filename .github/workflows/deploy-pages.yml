@@ -33,9 +33,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up pnpm
-        # Version comes from the root package.json "packageManager" field
-        # (specifying it here too causes a version-conflict error).
         uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
       - name: Set up Node
         uses: actions/setup-node@v4
