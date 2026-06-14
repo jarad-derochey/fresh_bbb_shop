@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://spojt.vercel.app/sitemap.xml
+
+# Block common bot paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /favicon.ico
+Disallow: /.well-known/

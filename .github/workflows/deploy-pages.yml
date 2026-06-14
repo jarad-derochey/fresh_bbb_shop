@@ -1,10 +1,10 @@
-name: Deploy storefront to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
-      - "site/**"
+      - "web/**"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch: {}
 
@@ -25,20 +25,38 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    defaults:
+      run:
+        working-directory: web
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile --ignore-scripts
+
+      - name: Build static export (next build -> web/out)
+        run: pnpm build
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          # Turn Pages on automatically (no manual Settings step needed)
-          enablement: true
 
-      - name: Upload the storefront (site/ folder)
+      - name: Upload artifact (web/out)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: web/out
 
       - name: Deploy to GitHub Pages
         id: deployment
