@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MVP Bullies — Built for the Bully Life</title>
+  <meta name="description" content="Premium supplements, apparel and breeder gear for XL American Bullies. Bully Bites daily vitamin chews, Big Dog Energy streetwear, whelping kits and smart litter collars." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MVP Bullies — Built for the Bully Life" />
+  <meta property="og:description" content="Premium supplements, apparel & breeder gear for XL American Bullies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/brand/mvp-logo.jpg" />
+
+  <link rel="icon" href="assets/brand/mvp-logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    FREE SHIPPING ON ORDERS $75+ &nbsp;·&nbsp; BUILT FOR THE BULLY LIFE &nbsp;·&nbsp; QC CERTIFIED
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="brand">
+        <img src="assets/brand/mvp-logo.jpg" alt="MVP Bullies" class="brand__logo" />
+        <span class="brand__name">MVP&nbsp;BULLIES</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Menu">☰</button>
+
+      <nav class="nav__links" id="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#bestsellers">Bestsellers</a>
+        <a href="#lifestyle">The Life</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+
+      <button class="nav__cart" data-action="open-cart" aria-label="Open cart">
+        <span class="bag">🛒</span>
+        <span class="cart-count is-empty">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero__bg" src="assets/brand/bronx.jpg" alt="" aria-hidden="true" />
+    <div class="hero__scrim"></div>
+    <div class="hero__content">
+      <span class="eyebrow">XL Bully · Supplements · Apparel · Breeder Gear</span>
+      <h1 class="hero__title">BUILT FOR THE<br /><span class="gold">BULLY LIFE</span></h1>
+      <p class="hero__sub">
+        Premium nutrition, heavyweight streetwear and pro-grade breeder gear —
+        engineered for the biggest dogs in the game.
+      </p>
+      <div class="hero__cta">
+        <a href="#shop" class="btn btn--gold btn--lg">Shop the drop</a>
+        <a href="#bestsellers" class="btn btn--outline btn--lg">Bestsellers</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>10k+</strong><span>Bullies fueled</span></div>
+        <div><strong>4.9★</strong><span>Avg rating</span></div>
+        <div><strong>USA</strong><span>Made & QC'd</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="trust">
+    <div class="trust__item"><span>💪</span> Muscle, joint &amp; coat support</div>
+    <div class="trust__item"><span>🚚</span> Free shipping over $75</div>
+    <div class="trust__item"><span>🏅</span> QC certified batches</div>
+    <div class="trust__item"><span>🐾</span> Vet-formulated</div>
+  </section>
+
+  <!-- Bestsellers / featured -->
+  <section class="section" id="bestsellers">
+    <div class="section__head">
+      <span class="kicker">The lineup</span>
+      <h2>Bestsellers</h2>
+      <p>The gear the pack keeps coming back for.</p>
+    </div>
+    <div class="feature">
+      <div class="feature__media">
+        <img src="assets/products/bully-bites.png" alt="Bully Bites daily vitamin chews" />
+      </div>
+      <div class="feature__copy">
+        <span class="card__badge static">#1 Bestseller</span>
+        <h3>Bully Bites — Daily Vitamin Chews</h3>
+        <p>Muscle &amp; mass, skin &amp; coat, joint &amp; hip — one soft chew does it all.
+           60 count, QC certified, made for XL &amp; large-breed dogs.</p>
+        <div class="feature__price"><span class="price">$39.99</span><span class="price--was">$49.99</span></div>
+        <button class="btn btn--gold btn--lg" data-action="quickview" data-id="bully-bites">Shop Bully Bites</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop grid -->
+  <section class="section section--alt" id="shop">
+    <div class="section__head">
+      <span class="kicker">Shop all</span>
+      <h2>The Collection</h2>
+      <p>Supplements, apparel, breeder gear &amp; smart tech — all in one yard.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="product-grid"></div>
+  </section>
+
+  <!-- Lifestyle -->
+  <section class="lifestyle" id="lifestyle">
+    <div class="lifestyle__media">
+      <img src="assets/brand/bronx-run.jpg" alt="An American Bully in full stride" />
+    </div>
+    <div class="lifestyle__copy">
+      <span class="kicker">The bully life</span>
+      <h2>For the dogs that <span class="gold">run the block</span>.</h2>
+      <p>From whelping day to the show ring, MVP Bullies builds gear for owners who
+         treat their dogs like family and their family like champions.</p>
+      <ul class="lifestyle__list">
+        <li>Vet-formulated nutrition for XL frames</li>
+        <li>Pro breeder tools used by top kennels</li>
+        <li>Streetwear that reps the lifestyle</li>
+      </ul>
+      <a href="#shop" class="btn btn--outline btn--lg">Explore the collection</a>
+    </div>
+  </section>
+
+  <!-- Care kit feature band -->
+  <section class="band">
+    <div class="band__img"><img src="assets/brand/litter.png" alt="Newborn litter with color ID collars" /></div>
+    <div class="band__copy">
+      <span class="kicker">Breeder grade</span>
+      <h2>Day-one ready.</h2>
+      <p>The B.G.K. Whelping &amp; Care Kit plus Smart Litter ID Collars give you
+         everything to track and care for every pup from the first breath.</p>
+      <div class="band__cta">
+        <button class="btn btn--gold" data-action="quickview" data-id="care-kit">The Care Kit</button>
+        <button class="btn btn--outline" data-action="quickview" data-id="collar-set">Smart Collars</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="section__head">
+      <span class="kicker">The pack speaks</span>
+      <h2>Reviews</h2>
+      <p>Real owners. Real results.</p>
+    </div>
+    <div class="reviews">
+      <blockquote class="review">
+        <div class="stars">★★★★★</div>
+        <p>"My XL's coat has never looked better and he's packing on clean muscle. Bully Bites are the real deal."</p>
+        <cite>— Marcus T., Bronx's owner</cite>
+      </blockquote>
+      <blockquote class="review">
+        <div class="stars">★★★★★</div>
+        <p>"The whelping kit made our first litter so much less stressful. Everything in one premium box."</p>
+        <cite>— Dana R., Iron Paw Kennels</cite>
+      </blockquote>
+      <blockquote class="review">
+        <div class="stars">★★★★★</div>
+        <p>"Hoodie is HEAVY in the best way. Gets compliments every time. Big dog energy for real."</p>
+        <cite>— Jay P.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter__inner">
+      <h2>Join the pack</h2>
+      <p>Drops, restocks and 10% off your first order.</p>
+      <form id="newsletter-form" class="newsletter__form">
+        <input type="email" required placeholder="you@email.com" aria-label="Email address" />
+        <button class="btn btn--gold" type="submit">Sign up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <img src="assets/brand/mvp-logo.jpg" alt="MVP Bullies" />
+        <p>Built for the bully life. Premium gear for XL American Bullies and the people who love them.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop">Supplements</a>
+        <a href="#shop">Apparel</a>
+        <a href="#shop">Breeder Gear</a>
+        <a href="#shop">Smart Tech</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#lifestyle">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#newsletter">Contact</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQ</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MVP Bullies. All rights reserved.</span>
+      <span class="footer__note">Demo storefront · built with the Once UI / spojt stack in mind.</span>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <aside class="cart" id="cart" aria-label="Shopping cart">
+    <div class="cart__head">
+      <h3>Your cart</h3>
+      <button class="cart__close" data-action="close-cart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart__body" id="cart-body"></div>
+    <div class="cart__footer" id="cart-footer">
+      <div class="cart__ship" id="free-ship"></div>
+      <div class="cart__subtotal">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">$0.00</strong>
+      </div>
+      <button class="btn btn--gold btn--block btn--lg" data-action="checkout">Checkout</button>
+      <button class="btn btn--ghost btn--block" data-action="close-cart">Continue shopping</button>
+    </div>
+  </aside>
+
+  <!-- Quick-view modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <button class="modal__close" data-action="close-modal" aria-label="Close">✕</button>
+    <div class="modal__content" id="modal-content"></div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
